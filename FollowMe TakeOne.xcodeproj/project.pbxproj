@@ -21,6 +21,8 @@
 		D7D683C21831DD11005F0CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683A41831DD11005F0CBA /* UIKit.framework */; };
 		D7D683CA1831DD11005F0CBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7D683C81831DD11005F0CBA /* InfoPlist.strings */; };
 		D7D683CC1831DD11005F0CBA /* FollowMe_TakeOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D683CB1831DD11005F0CBA /* FollowMe_TakeOneTests.m */; };
+		D7D683D61831DD6A005F0CBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683D51831DD6A005F0CBA /* MapKit.framework */; };
+		D7D683D81831EF07005F0CBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683D71831EF07005F0CBA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D7D683C71831DD11005F0CBA /* FollowMe TakeOneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FollowMe TakeOneTests-Info.plist"; sourceTree = "<group>"; };
 		D7D683C91831DD11005F0CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7D683CB1831DD11005F0CBA /* FollowMe_TakeOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowMe_TakeOneTests.m; sourceTree = "<group>"; };
+		D7D683D51831DD6A005F0CBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D7D683D71831EF07005F0CBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D683D81831EF07005F0CBA /* CoreLocation.framework in Frameworks */,
 				D7D683A31831DD11005F0CBA /* CoreGraphics.framework in Frameworks */,
 				D7D683A51831DD11005F0CBA /* UIKit.framework in Frameworks */,
+				D7D683D61831DD6A005F0CBA /* MapKit.framework in Frameworks */,
 				D7D683A11831DD11005F0CBA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +107,8 @@
 		D7D6839F1831DD11005F0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7D683D71831EF07005F0CBA /* CoreLocation.framework */,
+				D7D683D51831DD6A005F0CBA /* MapKit.framework */,
 				D7D683A01831DD11005F0CBA /* Foundation.framework */,
 				D7D683A21831DD11005F0CBA /* CoreGraphics.framework */,
 				D7D683A41831DD11005F0CBA /* UIKit.framework */,
@@ -199,6 +207,16 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Routing;
 				TargetAttributes = {
+					D7D6839C1831DD11005F0CBA = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					D7D683BD1831DD11005F0CBA = {
 						TestTargetID = D7D6839C1831DD11005F0CBA;
 					};

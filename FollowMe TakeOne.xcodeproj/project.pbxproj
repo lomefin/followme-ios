@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72427881838237E001C3BF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D72427861838237E001C3BF8 /* Model.xcdatamodeld */; };
+		D724278A183824D3001C3BF8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7242789183824D3001C3BF8 /* CoreData.framework */; };
+		D724278D18382731001C3BF8 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = D724278C18382731001C3BF8 /* Ride.m */; };
+		D724279018382732001C3BF8 /* PositionMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = D724278F18382732001C3BF8 /* PositionMarker.m */; };
+		D7242793183829B7001C3BF8 /* RideController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7242792183829B7001C3BF8 /* RideController.m */; };
 		D7D683A11831DD11005F0CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683A01831DD11005F0CBA /* Foundation.framework */; };
 		D7D683A31831DD11005F0CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683A21831DD11005F0CBA /* CoreGraphics.framework */; };
 		D7D683A51831DD11005F0CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D683A41831DD11005F0CBA /* UIKit.framework */; };
@@ -36,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D72427871838237E001C3BF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D7242789183824D3001C3BF8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D724278B18382731001C3BF8 /* Ride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
+		D724278C18382731001C3BF8 /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
+		D724278E18382732001C3BF8 /* PositionMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionMarker.h; sourceTree = "<group>"; };
+		D724278F18382732001C3BF8 /* PositionMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionMarker.m; sourceTree = "<group>"; };
+		D7242791183829B7001C3BF8 /* RideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RideController.h; sourceTree = "<group>"; };
+		D7242792183829B7001C3BF8 /* RideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RideController.m; sourceTree = "<group>"; };
 		D7D6839D1831DD11005F0CBA /* FollowMe TakeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FollowMe TakeOne.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D683A01831DD11005F0CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7D683A21831DD11005F0CBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D724278A183824D3001C3BF8 /* CoreData.framework in Frameworks */,
 				D7D683D81831EF07005F0CBA /* CoreLocation.framework in Frameworks */,
 				D7D683A31831DD11005F0CBA /* CoreGraphics.framework in Frameworks */,
 				D7D683A51831DD11005F0CBA /* UIKit.framework in Frameworks */,
@@ -107,6 +121,7 @@
 		D7D6839F1831DD11005F0CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7242789183824D3001C3BF8 /* CoreData.framework */,
 				D7D683D71831EF07005F0CBA /* CoreLocation.framework */,
 				D7D683D51831DD6A005F0CBA /* MapKit.framework */,
 				D7D683A01831DD11005F0CBA /* Foundation.framework */,
@@ -127,6 +142,13 @@
 				D7D683B61831DD11005F0CBA /* ViewController.m */,
 				D7D683B81831DD11005F0CBA /* Images.xcassets */,
 				D7D683A71831DD11005F0CBA /* Supporting Files */,
+				D72427861838237E001C3BF8 /* Model.xcdatamodeld */,
+				D724278E18382732001C3BF8 /* PositionMarker.h */,
+				D724278F18382732001C3BF8 /* PositionMarker.m */,
+				D724278B18382731001C3BF8 /* Ride.h */,
+				D724278C18382731001C3BF8 /* Ride.m */,
+				D7242791183829B7001C3BF8 /* RideController.h */,
+				D7242792183829B7001C3BF8 /* RideController.m */,
 			);
 			path = "FollowMe TakeOne";
 			sourceTree = "<group>";
@@ -267,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D724279018382732001C3BF8 /* PositionMarker.m in Sources */,
+				D724278D18382731001C3BF8 /* Ride.m in Sources */,
 				D7D683B71831DD11005F0CBA /* ViewController.m in Sources */,
 				D7D683B11831DD11005F0CBA /* AppDelegate.m in Sources */,
+				D7242793183829B7001C3BF8 /* RideController.m in Sources */,
 				D7D683AD1831DD11005F0CBA /* main.m in Sources */,
+				D72427881838237E001C3BF8 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +504,7 @@
 				D7D683D11831DD11005F0CBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7D683D21831DD11005F0CBA /* Build configuration list for PBXNativeTarget "FollowMe TakeOneTests" */ = {
 			isa = XCConfigurationList;
@@ -486,8 +513,22 @@
 				D7D683D41831DD11005F0CBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D72427861838237E001C3BF8 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D72427871838237E001C3BF8 /* Model.xcdatamodel */,
+			);
+			currentVersion = D72427871838237E001C3BF8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D7D683951831DD11005F0CBA /* Project object */;
 }
